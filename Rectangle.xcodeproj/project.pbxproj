@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		223FA3D42D79A27300231EF6 /* Rectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Rectangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		223FA3DF2D79A2BA00231EF6 /* Header.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Header.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -46,6 +47,7 @@
 			children = (
 				223FA3D62D79A27300231EF6 /* Rectangle */,
 				223FA3D52D79A27300231EF6 /* Products */,
+				223FA3DF2D79A2BA00231EF6 /* Header.hpp */,
 			);
 			sourceTree = "<group>";
 		};

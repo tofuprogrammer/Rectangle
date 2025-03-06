@@ -1,14 +1,23 @@
-//
-//  main.cpp
-//  Rectangle
-//
-//  Created by Sam Hart on 06/03/2025.
-//
-
 #include <iostream>
+#include "Header.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    int rectangleWidth;
+    int rectangleHeight;
+    InputRectangle(rectangleWidth, rectangleHeight);
+    OutputRectangleDimensions(rectangleWidth, rectangleHeight);
+}
+
+void InputRectangle (int& rectangleWidth, int& rectangleHeight) {
+    std::cout << "Enter the width of the rectangle (integer only): \n";
+    std::cin >> rectangleWidth;
+    std::cout << "Enter the height of the rectangle (integer only): \n";
+    std::cin >> rectangleHeight;
+}
+
+void OutputRectangleDimensions (const int rectangleWidth, const int rectangleHeight){
+    int rectangleArea = rectangleWidth * rectangleHeight;
+    int rectanglePerimeter = (2 * rectangleWidth) + (2 * rectangleHeight);
+    std::cout << "The area of the rectangle is " << rectangleArea << '\n';
+    std::cout << "The perimeter of the rectangle is " << rectanglePerimeter << '\n';
 }
